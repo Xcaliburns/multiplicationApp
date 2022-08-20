@@ -1,0 +1,60 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(https://images.unsplash.com/photo-1632207190829-a97e41017175?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1190&q=80);
+    font-family: cursive;
+    .form {
+        background-color: white;
+        padding: 20px;
+        box-shadow: 10px 20px 8px rgba(0, 0, 0, 0.782);
+        border-radius: 10px;
+        margin: 10px;
+        .input {
+            display: block;
+            width: 100%;
+            box-sizing: border-box;
+            font-size: 25px;
+            text-align: center;
+            padding: 10px;
+            border: solid 7px forestgreen;
+            color: forestgreen;
+        }
+         ::placeholder {
+            color: lightgray;
+            font-family: cursive;
+        }
+    }
+    .btn {
+        background: forestgreen;
+        color: white;
+        border: none;
+        display: block;
+        width: 100%;
+        padding: 10px;
+        font-size: 20px;
+        font-family: cursive;
+        margin: 20px 0;
+        border-radius: 5px;
+        box-shadow: 10px 20px 8px rgba(0, 0, 0, 0.782);
+        cursor: pointer;
+        &:hover {
+            filter: brightness(0.9);
+        }
+    }
+    .score {
+        display: inline;
+        margin: 20px;
+    }
+    #juste {
+        color: forestgreen;
+    }
+    #faux {
+        color: rgb(255, 0, 0);
+    }
+}
