@@ -9,6 +9,7 @@ const formEl = document.getElementById("form");
 
 const justeEl = document.getElementById("juste");
 const fauxEl = document.getElementById("faux");
+const resetEl = document.getElementById("reset");
 
 let juste = JSON.parse(localStorage.getItem("juste"));
 
@@ -39,7 +40,18 @@ formEl.addEventListener("submit", () => {
         faux++;
         updateLocalStorage();
     }
+
+
 });
+//test bouton reset
+resetEl.onclick = function(e) {
+    juste = 0;
+    justeEl.innerText = `juste: ${juste}`;
+    faux = 0;
+    fauxEl.innerText = `faux: ${faux}`;
+    updateLocalStorage();
+}
+
 
 function updateLocalStorage() {
     localStorage.setItem("juste", JSON.stringify(juste));
